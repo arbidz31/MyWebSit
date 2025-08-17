@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arbidz31.github.io/MyWebSit/sitemap.xml

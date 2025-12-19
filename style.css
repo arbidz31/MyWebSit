@@ -1,14 +1,22 @@
-/* Reset & Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html,
 body {
+
     overflow-x: hidden;
+    /* يمنع أي تمرير أفقي غير مرغوب */
+    scroll-behavior: smooth;
+    /* لجعل التنقل سلس */
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
 }
+
+
 
 /* Navbar */
 .navbar {
@@ -17,9 +25,53 @@ body {
     align-items: center;
     background: #333636;
     padding: 10px 20px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #292727;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 300px;
+    color: rgb(255, 250, 250);
+    /* قائمة البدع */
+
+    max-height: 260px;
+    /* حد أقصى للارتفاع */
+    overflow-y: auto;
+    /* سكرول عمودي */
+    scrollbar-width: thin;
+    /* فايرفوكس */
+    scrollbar-color: #dbf4ff #000000;
+}
+
+
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 .navbar .logo1 {
@@ -36,13 +88,25 @@ body {
     text-decoration: none;
     color: #c7c7c7;
     padding: 8px 12px;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.3s;
 }
 
 .nav-links li a:hover {
-    background-color: rgb(128,121,121);
+    background-color: rgb(128, 121, 121);
     color: black;
+}
+
+.tawhid img {
+    margin-top: 15px;
+    width: 100%;
+    height: 800px;
+    image-rendering: auto;
+    /* الافتراضي */
+    image-rendering: crisp-edges;
+    /* للصور ذات الحواف الحادة */
+    image-rendering: pixelated;
+
 }
 
 .hamburger {
@@ -54,148 +118,680 @@ body {
     cursor: pointer;
 }
 
-/* Section Home */
-.all h2 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 36px;
-}
-.all h2 span {
-    color: #1693e6;
+.all h4 {
+    color: #4a4a4a;
+
 }
 
-/* Developer Image */
-.imgdev {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.img-bd {
+    width: 200px;
+    height: 200px;
+    margin-right: 1050px;
+    margin-top: -200px;
 }
-.dev {
+
+.all span {
+    color: rgb(61, 121, 2);
+
+}
+
+.all .hadit1 {
+    color: #dd620f;
+}
+
+.hr1 {
+    margin-top: 30px;
+
+}
+
+.hadit2 span {
+    color: rgb(61, 121, 2);
+
+}
+
+.hadit2 b {
+    color: #dd620f;
+
+}
+
+.hadit2 {
+    margin-top: 50px;
+    font-weight: 500;
+
+    .op {
+        margin-top: 20px;
+
+    }
+}
+
+.rajl-t {
+    margin-right: 70%;
+    margin-top: -150px;
+}
+
+.sec3 p {
+    width: 600px;
+}
+
+.rad {
+    margin-right: 50%;
+    margin-top: -170px;
+}
+
+/* القسم العام */
+.sec2,
+.sec3 {
+    margin: 30px auto;
+    max-width: 850px;
+    margin-top: 10px;
+    padding: 0 15px;
+    line-height: 1.9;
+    color: #2b2b2b;
+}
+
+/* عنوان أنواع البدع */
+.anwa3 {
+    font-size: 24px;
+    color: #0d3b66;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+}
+
+/* عنوان البدعة */
+.sec2 h3 {
+    font-size: 20px;
+    color: #1b5e20;
+    margin-bottom: 8px;
+}
+
+/* الفقرات */
+.sec2 p,
+.sec3 p {
+    font-size: 16.5px;
+    margin-bottom: 10px;
+}
+
+/* عنوان الشبهة */
+.rad3labid3a1 h3 {
+    font-size: 20px;
+    color: #8b0000;
+    margin-bottom: 8px;
+}
+
+/* نص الشبهة */
+.rad3labid3a1 {
+    background-color: #fafafa;
+    padding: 12px 15px;
+    border-right: 3px solid #8b0000;
+}
+
+/* تمييز الحديث */
+.rad3labid3a1 .p1 {
+    background-color: #f2f2f2;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: #1a237e;
+}
+
+/* للجوال */
+@media (max-width: 768px) {
+
+    .sec2,
+    .sec3 {
+        margin: 25px auto;
+    }
+}
+
+.taw9if {
+    margin-top: 80px;
+
+    img {
+        width: 100%;
+        height: auto;
+
+    }
+}
+
+.ta9sim1 {
+    width: 50%;
+}
+
+/* تنسيق عام للقسم */
+.bidaa-card {
+    max-width: 900px;
+    margin: 90px auto;
+    padding: 15px 25px;
+    line-height: 2;
+    color: #2a2a2a;
+}
+
+/* العنوان الرئيسي */
+.bidaa-heading {
+    text-align: center;
+    font-size: 30px;
+    color: #0d3b66;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* الفقرات */
+.bidaa-paragraph {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* إبراز الكلمات المهمة */
+.bidaa-card strong {
+    color: #1b5e20;
+    background-color: #e8f5e9;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* كلمات التفسير */
+.bidaa-card em {
+    font-style: normal;
+    color: #6a1b9a;
+    text-decoration: underline;
+}
+
+/* قاعدة العبادات */
+.bidaa-note {
+    margin: 30px 0;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #b71c1c;
+    background-color: #fdecea;
+    border-right: 4px solid #b71c1c;
+}
+
+/* قسم الشبهة */
+.bidaa-proof {
+    margin-top: 40px;
+}
+
+/* عناوين الشبهة والجواب */
+.bidaa-proof-title {
+    font-size: 22px;
+    color: #bf360c;
+    margin-bottom: 15px;
+}
+
+/* الحديث */
+.bidaa-hadith {
+    background-color: #f4f4f4;
+    color: #1a237e;
+    padding: 14px 18px;
+    border-right: 4px solid #1a237e;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* فقرات الجواب */
+.bidaa-proof .bidaa-paragraph {
+    font-size: 17px;
+}
+
+/* تنسيق عام للنص */
+.bidaa-box {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 10px 20px;
+    line-height: 2;
+    color: #2b2b2b;
+}
+
+/* العنوان الرئيسي */
+.bidaa-title {
+    color: #8b0000;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* الفقرات */
+.bidaa-text {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+/* إبراز الكلمات المهمة */
+.bidaa-box strong {
+    color: #004d40;
+    background-color: #e6f2ef;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* الكلمات الممثلة للأقوال */
+.bidaa-box em {
+    color: #6a1b9a;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* عبارة التحذير */
+.bidaa-warning {
+    margin: 30px 0;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #b71c1c;
+    background-color: #fdecea;
+    border-right: 4px solid #b71c1c;
+}
+
+/* الأدلة */
+.bidaa-evidence p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* الآيات والأحاديث */
+.bidaa-evidence span {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 10px;
+    background-color: #f4f4f4;
+    color: #1a237e;
+    border-right: 3px solid #1a237e;
+}
+
+/* عنوان الشبهة */
+.bidaa-evidence h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #bf360c;
+    font-size: 22px;
+}
+
+/* قائمة التوسل */
+.bidaa-evidence ul {
+    margin: 15px 25px;
+}
+
+
+.bidaa-evidence li {
+    margin-bottom: 8px;
+    font-size: 17px;
+    list-style: square;
+}
+
+.taimia {
+    margin-right: 700px;
+    margin-top: -500px;
+
+}
+
+.taimia img {
     width: 300px;
     height: auto;
-}
-
-/* About */
-.about {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-/* Sources Section */
-.clr {
-    background-color: #4b29a8;
-    padding: 50px 20px;
-    color: #fff;
-}
-
-.imag_big {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap; /* يسمح بتكديس الصور على الأجهزة الصغيرة */
-    margin-top: 20px;
-}
-
-.imag_big img {
-    width: 180px;
-    height: 160px;
-    object-fit: cover;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
 }
 
-.imag_big img:hover {
-    transform: scale(1.05);
-}
-.masadir{
-  display: flex;
-  justify-content: center;
 
-}
 
-.kanat {
-    display: flex;
-    justify-content: center;
-    gap: 130px;
-    margin-top: 20px;
-}
-.kanat a{
-    transition: 0.3s ease-out;
-
-}
-.kanat a:hover{
-  color: black;
-  
+/* القسم الجديد للبدعة */
+.bidaa-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 15px 20px;
+    line-height: 1.85;
+    color: #333333;
 }
 
-.kanat a {
-    text-decoration: none;
-    color: #ffd700;
-}
-.logo div {
-  margin-top: 150px;
-  display: flex;
-  justify-content: space-between;
-
-}
-.logo div img{
-  border-radius: 15px;
-}
-
-/* Contact */
-.lastdiv {
-    height: 250px;
-    margin-top: 300px;
-    background-color: #292727;
-    padding: 50px 20px;
+.bidaa-title-new {
     text-align: center;
-    color: #fff;
+    font-size: 30px;
+    color: #0b3954;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
 }
-.email{
+
+.bidaa-text-new {
+    font-size: 16.5px;
+    margin-bottom: 12px;
+}
+
+.bidaa-hadith-new {
+    background-color: #f5f5f8;
+    color: #1c2a5a;
+    padding: 12px 14px;
+    border-right: 4px solid #1c2a5a;
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.bidaa-section strong {
+    color: #15616d;
+    background-color: #e0f7fa;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.bidaa-toggle-btn {
+    width: 100%;
+    display: block;
+    /* مهم */
+    text-align: right;
+    padding: 14px 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #0b3954;
+    background-color: #f0f0f0;
+    border: 2px solid #0b3954;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 12px;
+    /* يمنع التداخل */
+}
+
+
+.bidaa-toggle-btn:hover {
+    background-color: #e1f0f7;
+}
+
+.bidaa-collapsible-content {
+    margin-top: 10px;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-left: 4px solid #0b3954;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.haditayn .hdt1 {
+    image-rendering: auto;
+    /* الوضع الافتراضي */
+    image-rendering: crisp-edges;
+    /* يحافظ على حدة الحواف */
+    image-rendering: pixelated;
+    /* يحافظ على البكسلات واضحة عند الصور الصغيرة */
+    width: 60%;
+    height: 500px;
+    margin-right: 200px;
+
+}
+
+#bidah-dhikr {
+    line-height: 1.9;
+    max-width: 900px;
+    margin: auto;
+    color: #0f172a;
+    /* لون نص غامق */
+}
+
+/* العنوان */
+.bidaa-title {
+    color: #1e3a8a;
+    /* أزرق غامق */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #1e3a8a;
+    padding-bottom: 6px;
+}
+
+/* النص العادي */
+.bidaa-text {
+    font-size: 17px;
+    margin: 14px 0;
+    color: #020617;
+}
+
+/* تمييز أخضر */
+.hl {
+    color: #047857;
+    font-weight: bold;
+}
+
+/* تمييز ذهبي */
+.hl2 {
+    color: #b45309;
+    font-weight: bold;
+}
+
+/* الآية */
+.bidaa-ayah {
+    color: #1e40af;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+/* مصدر الآية */
+.bidaa-ayah span {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* الحديث */
+.bidaa-hadith {
+    color: #0f172a;
+    font-size: 17px;
+    margin: 16px 0;
+    border-right: 4px solid #1e3a8a;
+    padding-right: 10px;
+}
+
+/* التحذير */
+.bidaa-note {
     margin-top: 20px;
-}
-.email a{
-    color: #106ead;
-    transition: 0.3s ease-in-out;
-    text-decoration: none;
-
-}
-.email a:hover{
-    color: #0e9fe2;
+    color: #7f1d1d;
+    font-weight: bold;
 }
 
-/* Responsive */
+/* كلمة خطر */
+.danger {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    padding: 20px;
+    line-height: 1.8;
+}
+
+.bidaa-highlight {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #ff4d4d;
+}
+
+.bidaa-highlight h2 {
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+
+.bidaa-highlight h3 {
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.bidaa-highlight ul {
+    margin: 10px 0 15px 20px;
+    padding: 0;
+}
+
+.bidaa-highlight li {
+    margin-bottom: 8px;
+}
+
+.bidaa-highlight .highlight {
+    color: #ff4d4d;
+    font-weight: bold;
+    background: rgba(255, 77, 77, 0.1);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.bidaa-highlight .source {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.bidaa-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #0f172a;
+    /* كحلي غامق */
+    color: #e5e7eb;
+    line-height: 1.9;
+    font-family: "Tahoma", sans-serif;
+}
+
+.bidaa-section h2 {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 10px;
+}
+
+.bidaa-section h3 {
+    color: #facc15;
+    margin-top: 25px;
+}
+
+.bidaa-section hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #475569, transparent);
+    margin: 25px 0;
+}
+
+.highlight {
+    color: #fb7185;
+    font-weight: bold;
+}
+
+.quote {
+    display: block;
+    color: #cbd5f5;
+    border-right: 3px solid #38bdf8;
+    padding-right: 10px;
+    margin-top: 8px;
+}
+
+.danger {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.bidaa-img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 25px;
+    border: 2px solid #334155;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
-    *{
-      font-weight: 400;
-    }
+
     .nav-links {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        /* مخفي */
+        width: 50%;
+        /* نصف الشاشة */
+        height: 100vh;
+        background-color: #020617;
         flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #333636;
-        width: 200px;
-        display: none;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    .kanat{
-      flex-direction: column;
-      margin-left: 250px;
-      margin-top: -420px
+        padding-top: 80px;
+        gap: 20px;
+        transition: right 0.35s ease;
+        z-index: 999;
     }
 
-    .nav-links.open {
-        display: flex;
+    .nav-links.active {
+        right: 0;
+        /* يطلع من اليمين */
+    }
+
+    .nav-links li {
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 18px;
+        color: #e5e7eb;
+        border-bottom: 1px solid #161875;
+        padding: 12px 0;
+        display: block;
     }
 
     .hamburger {
         display: block;
+        z-index: 1000;
     }
 
-    .imag_big {
-        flex-direction: column;
-        gap: 20px;
+    /* dropdown داخل الهاتف */
+    .dropdown-menu {
+        display: none;
+        background-color: #0048a7;
+        padding-right: 15px;
+
     }
+
+    .dropdown.open .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 400px){
+    .tawhid img{
+        width: 100%;
+        height: auto;
+    }
+    .all img{
+        margin-right: 40%;
+        margin-top: 0px;
+        width: 100px;
+        height: auto;
+    }
+    .rajl-t{
+        margin-right: 50px;
+        padding-top: 180px;
+    }
+    .ac{
+        margin-right: 10px;
+
+    }
+
 }

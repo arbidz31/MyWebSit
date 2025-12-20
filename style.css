@@ -801,6 +801,14 @@ body {
     }
 
 }
+@media (max-width: 650px){
+    .rajl-t{
+        margin-right: 50px;
+        padding-top: 180px;
+    }
+
+}
+
 
 
 

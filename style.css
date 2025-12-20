@@ -709,6 +709,40 @@ body {
     border: 2px solid #334155;
 }
 
+.bidaa-text-section {
+  padding: 40px 20px;
+  background: #f2f2f2;
+}
+
+.bidaa-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.bidaa-text h2 {
+  color: #8b0000;
+  margin-bottom: 15px;
+}
+
+.bidaa-text p {
+  line-height: 1.9;
+  color: #222;
+  margin-bottom: 14px;
+}
+
+.bidaa-text em {
+  color: #444;
+}
+
+.bidaa-image img {
+  width: 300px;
+  border-radius: 10px;
+  filter: grayscale(30%);
+}
+
 
 
 
@@ -807,6 +841,15 @@ body {
         padding-top: 180px;
     }
 
+}
+@media (max-width: 768px) {
+  .bidaa-content {
+    flex-direction: column;
+  }
+
+  .bidaa-image img {
+    width: 100%;
+  }
 }
 
 

@@ -774,7 +774,7 @@ body {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 450px){
     .tawhid img{
         width: 100%;
         height: auto;
@@ -793,5 +793,13 @@ body {
         margin-right: 10px;
 
     }
+    
 
 }
+@media(max-width:900px){
+    .rajl-t{
+        display: none;
+    }
+
+}
+

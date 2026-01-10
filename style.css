@@ -1081,6 +1081,9 @@ body {
     font-size: 1.1rem;
     margin: 12px 15px 5px;
     color: #2d3748;
+    display: flex ;
+    justify-content: center;
+    
 }
 
 #scholars-video .video-card p {
@@ -1088,6 +1091,8 @@ body {
     margin: 0 15px 15px;
     color: #4a5568;
     line-height: 1.4;
+    display: flex ;
+    justify-content: center;
 }
 
 
@@ -1204,6 +1209,7 @@ body {
 
 
 }
+
 
 
 

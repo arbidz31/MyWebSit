@@ -1066,7 +1066,7 @@ body {
 }
 
 #scholars-video .video-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -1209,6 +1209,7 @@ body {
 
 
 }
+
 
 
 

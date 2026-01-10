@@ -1046,9 +1046,16 @@ body {
 
 #scholars-video .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
+
+/* إذا كان العنصر الأخير وحده في السطر */
+#scholars-video .videos-grid .video-card:only-child,
+#scholars-video .videos-grid .video-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1; /* ياخذ كامل السطر */
+}
+
 
 #scholars-video .video-card {
     background-color: #fff;
@@ -1197,5 +1204,6 @@ body {
 
 
 }
+
 
 

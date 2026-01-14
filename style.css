@@ -1187,7 +1187,7 @@ body {
     .nav-links li a {
         font-size: 18px;
         color: #e5e7eb;
-        border-bottom: 1px solid #161875;
+        border-bottom: 1px solid #1c1c25;
         padding: 12px 0;
         display: block;
     }
@@ -1200,7 +1200,7 @@ body {
     /* dropdown داخل الهاتف */
     .dropdown-menu {
         display: none;
-        background-color: #0048a7;
+        background-color: #000000;
         padding-right: 15px;
 
     }
@@ -1211,6 +1211,7 @@ body {
 
 
 }
+
 
 
 

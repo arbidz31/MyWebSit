@@ -1013,89 +1013,70 @@ body {
 .bidaa-mushaf li {
   margin-bottom: 12px;
 }
+/* القسم العام */
 #scholars-video {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    font-family: 'Arial', sans-serif;
-    direction: rtl;
+    padding: 40px 0;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
-#scholars-video .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-#scholars-video .section-title {
+/* العنوان */
+.section-title {
     text-align: center;
-    font-size: 2rem;
-    color: #1a202c;
-    margin-bottom: 40px;
-    font-weight: bold;
-    position: relative;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
-#scholars-video .section-title::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 4px;
-    background-color: #f56565;
-    margin: 10px auto 0;
-    border-radius: 2px;
+/* الحاوية */
+#scholars-video .container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-#scholars-video .videos-grid {
+/* الشبكة */
+.videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
 }
 
-/* إذا كان العنصر الأخير وحده في السطر */
-#scholars-video .videos-grid .video-card:only-child,
-#scholars-video .videos-grid .video-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1;
-    /* ياخذ كامل السطر */
-}
-
-
-#scholars-video .video-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+/* كرت الفيديو */
+.video-card {
+    background-color: #1a1a1a;
+    border-radius: 14px;
     overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#scholars-video .video-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+/* هوفر */
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
 }
 
-#scholars-video .video-card video {
+/* الفيديو */
+.video-card video {
     width: 100%;
-    height: 200px;
+    height: 180px;
+    object-fit: cover;
     display: block;
-    border-bottom: 1px solid #e2e8f0;
+}
+
+/* اسم الشيخ */
+.video-card h3 {
+    font-size: 18px;
+    margin: 12px 12px 6px;
+}
+
+/* وصف الفيديو */
+.video-card p {
+    font-size: 14px;
+    margin: 0 12px 14px;
+    color: #cfcfcf;
 }
 
 
-
-#scholars-video .video-card h3 {
-    font-size: 1.1rem;
-    margin: 12px 15px 5px;
-    color: #2d3748;
-    display: flex;
-    justify-content: center;
-}
-
-#scholars-video .video-card p {
-    font-size: 0.95rem;
-    margin: 0 15px 15px;
-    color: #4a5568;
-    line-height: 1.4;
-    display: flex;
-    justify-content: center;
-}
 body {
     padding: 0 !important;
 }
@@ -1213,6 +1194,13 @@ body {
 
 
 }
+/* موبايل */
+@media (max-width: 480px) {
+    .video-card video {
+        height: 200px;
+    }
+}
+
 
 
 

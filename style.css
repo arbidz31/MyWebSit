@@ -1037,7 +1037,7 @@ body {
 #scholars-video .section-title::after {
     content: '';
     display: block;
-    width: 80px;
+    width: 50px;
     height: 4px;
     background-color: #f56565;
     margin: 10px auto 0;
@@ -1053,7 +1053,8 @@ body {
 /* إذا كان العنصر الأخير وحده في السطر */
 #scholars-video .videos-grid .video-card:only-child,
 #scholars-video .videos-grid .video-card:last-child:nth-child(odd) {
-    grid-column: 1 / -1; /* ياخذ كامل السطر */
+    grid-column: 1 / -1;
+    /* ياخذ كامل السطر */
 }
 
 
@@ -1077,13 +1078,14 @@ body {
     border-bottom: 1px solid #e2e8f0;
 }
 
+
+
 #scholars-video .video-card h3 {
     font-size: 1.1rem;
     margin: 12px 15px 5px;
     color: #2d3748;
-    display: flex ;
+    display: flex;
     justify-content: center;
-    
 }
 
 #scholars-video .video-card p {
@@ -1091,7 +1093,7 @@ body {
     margin: 0 15px 15px;
     color: #4a5568;
     line-height: 1.4;
-    display: flex ;
+    display: flex;
     justify-content: center;
 }
 body {
@@ -1211,6 +1213,7 @@ body {
 
 
 }
+
 
 
 

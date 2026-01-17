@@ -1081,6 +1081,360 @@ body {
     padding: 0 !important;
 }
 
+/* تحديث يوم 21 رجب ---- تم*/
+
+body {
+    padding: 0 !important;
+}
+
+/* --------------------------- */
+
+
+/* تحديث يوم 23 - 22 رجب ----- */
+
+
+/* عرض السكرول بار */
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+/* خلفية المسار */
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom,
+            #f5f7fa,
+            #e4ecf7);
+    border-radius: 20px;
+}
+
+/* المقبض (الجزء المتحرك) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,
+            #39a6c4,
+            #044ba1,
+            #5c09b6);
+    border-radius: 20px;
+    border: 3px solid #e4ecf7;
+    /* يعطي لفة ناعمة */
+}
+
+/* عند المرور */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom,
+            #b88907,
+            #ff0000);
+}
+
+
+.all,
+.sec2,
+.hadit2 {
+    padding: 0px 10px;
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: linear-gradient(180deg, #0072ff, #00c6ff);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    box-shadow: 0 8px 20px rgba(0, 114, 255, 0.35);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 999;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#backToTop:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, #ff6a00, #ee0979);
+}
+
+
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+/* الـ Tooltip */
+#backToTop::after {
+    content: "العودة للأعلى";
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+
+    background: #222;
+    color: #fff;
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
+
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 0.25s, transform 0.25s;
+}
+
+/* عند الهوفر */
+#backToTop:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+
+.definition-section {
+    max-width: 800px;
+    margin: 60px 0;
+    padding: 0 20px;
+}
+
+.definition-section h2 {
+    color: #203a43;
+    margin-bottom: 20px;
+}
+
+.definition-box {
+    background: #f7f9fb;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.definition-box h3 {
+    margin-bottom: 8px;
+    color: #0072ff;
+    font-size: 16px;
+}
+
+.definition-box p {
+    margin: 0;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+
+
+
+.definition-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ديف الصورة فقط */
+.definition-image {
+    flex: 0 0 280px;
+    /* حجم متوسط */
+}
+
+.definition-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* النص */
+.definition-text {
+    flex: 1;
+}
+
+
+.main-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.section-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #1c6b4f;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s ease-in;
+
+}
+
+.section-btn:hover {
+    opacity: 0.9;
+    background-color: #000000;
+    color: #1c6b4f;
+}
+
+
+
+/* ------------------- */
+
+/* تحديث يوم 27رجب -- */
+
+.footer-main {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    text-align: right;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #cfcfcf;
+}
+
+.footer-section a {
+    color: #90caf9;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #9e9e9e;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: #90caf9;
+}
+
+.social-icons a {
+    position: relative;
+    display: inline-flex;
+}
+
+.social-icons a::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #222;
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+.social-icons a:hover::after {
+    opacity: 1;
+}
+.social-icons svg {
+  width: 26px;
+  height: 26px;
+  fill: #888;
+  transition: 0.25s;
+}
+
+/* Gmail */
+.social-icons a[data-name="Gmail"]:hover svg {
+  fill: #ea4335;
+}
+
+/* Telegram */
+.social-icons a[data-name="Telegram"]:hover svg {
+  fill: #229ed9;
+}
+
+/* Instagram */
+.social-icons a[data-name="Instagram"]:hover svg {
+  fill: #e1306c;
+}
+
+/* Discord */
+.social-icons a[data-name="Discord"]:hover svg {
+  fill: #5865f2;
+}
+
+/* Facebook */
+.social-icons a[data-name="Facebook"]:hover svg {
+  fill: #1877f2;
+}
+
+
+
+/* موبايل */
+@media (max-width: 600px) {
+    .footer-container {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* ---------- */
 
 
 
@@ -1200,6 +1554,7 @@ body {
         height: 200px;
     }
 }
+
 
 
 

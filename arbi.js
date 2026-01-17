@@ -64,3 +64,31 @@ window.addEventListener('resize', adjustLastRow);
 
 
 
+
+// تحديث جديد 22 رجب ------------ 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const backToTop = document.getElementById("backToTop");
+  if (!backToTop) return;
+
+  // إظهار وإخفاء الزر حسب السكرول
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+
+  // الصعود للأعلى بسلاسة
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
+
+
+// ------------

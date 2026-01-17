@@ -1554,6 +1554,17 @@ body {
         height: 200px;
     }
 }
+@media (max-width: 768px) {
+    .definition-content {
+        flex-direction: column-reverse;
+    }
+
+    .definition-image {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
 
 
 

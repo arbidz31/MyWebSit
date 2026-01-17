@@ -1,0 +1,173 @@
+.scholars-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.scholars-section h2 {
+  margin-bottom: 35px;
+  color: #1f2933;
+  /* رمادي غامق مريح */
+  font-size: 22px;
+  text-align: center;
+}
+
+.scholar-point {
+  background: linear-gradient(135deg,
+      #f8fafc,
+      #eef2f7);
+  padding: 22px 26px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.scholar-point:hover {
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+}
+
+.scholar-point h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #2563eb;
+  /* أزرق أنيق */
+}
+
+.scholar-point p {
+  margin: 0;
+  line-height: 1.9;
+  color: #374151;
+  /* رمادي مقروء */
+  font-size: 18px;
+}
+
+.scholar-point p::selection {
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+}
+
+.clr1 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text {
+  color: #000000;
+  line-height: 1.9;
+  font-size: 19px;
+}
+
+/* أسماء العلماء */
+.name {
+  color: #00557c;
+  font-weight: bold;
+}
+
+/* الأقوال المهمة */
+.important {
+  color: #e28800;
+  font-weight: bold;
+}
+
+/* الأحكام الشديدة */
+.hukm {
+  color: #ff100c;
+  font-weight: bold;
+}
+
+/* الكتب والمراجع */
+.book {
+  color: #00ff0d;
+}
+
+/* الآثار والأحاديث */
+.athar {
+  color: #000000;
+}
+
+.text-main {
+  color: #000;
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+/* كلمة قال */
+.word-qal {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+/* أسماء الشخصيات */
+.person-name {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.text-main h3 {
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+.text-main {
+  color: #000;
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* كلمة قال / يقول */
+.word-qal {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+/* أسماء الأئمة */
+.person-name {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* الأقوال المهمة */
+.important-text {
+  color: #000;
+  font-weight: bold;
+}
+
+/* المراجع */
+.reference {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.text-main {
+  color: #000;
+  font-size: 20px;
+  line-height: 2;
+}
+
+/* قال / يقول */
+.word-qal {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+/* أسماء العلماء */
+.person-name {
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* نص مهم */
+.important-text {
+  font-weight: bold;
+}
+
+/* مراجع */
+.reference {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
